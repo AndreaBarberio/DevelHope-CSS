@@ -1,0 +1,45 @@
+body {
+display: flex;
+    width: 60em;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  section {
+    padding: 2em;
+    margin: 0;
+  }
+  #green {
+    order: 3;
+    background-color: #8ffda7;
+  }
+  /* 
+  display: block per non far rispondere #orange-width al vw 
+   */
+  #orange {
+    order: 4;
+    width: 30%;
+    display: block;
+    background-color: #ffc788;
+  }
+  #yellow {
+    order: 1;
+    background-color: #ffff92;
+  }
+  #red {
+    order: 2;
+    background-color: #ff919c;
+  }
+  #blue {
+    order: 5;
+    background-color: #98d2ff;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    background-color: white;
+    padding: 1em;
+    display: block;
+    margin: 1em;
+  }
+  

@@ -1,0 +1,66 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif, 'Arial Narrow', Arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#sideBar {
+    display: flex;
+    height: 100%;
+    width: 200px;
+    background: rgba(100, 18, 18, 0.363);
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.centrare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.placeholder-logo {
+    padding: 20px 0px 0px 20px;
+    flex: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.navigation {
+    flex: 1 0 auto;
+}
+
+a {
+    padding: 20px 0px 0px 20px;
+}
+
+.avatar {
+    flex: 0;
+}
+
+a:link {
+    color: #2b2b2b;
+    text-decoration-line: none;
+    position: relative;
+}
+
+a:hover {
+    color: #2b2bb2;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+#avatar {
+    display: flex;
+    height: 100px;
+    width: 100px;
+}
+
+#avatarick {
+    width: 100px;
+}

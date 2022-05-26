@@ -1,0 +1,65 @@
+/* variabile per tutti i bordi */
+:root {
+    --border: 2px solid rgba(78, 78, 78, 0.685);
+}
+/*
+ contenitore genitore di tutti quindi ho impostato 
+ con repeat le 4 colonne che si dividono 1fr del contenitore
+ stesso discorso per rows ma la prima è 15% perchè mi sembra
+ leggermente più piccola sul layout.png
+ */
+.calc {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    width: 432px;
+    height: 422px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15% repeat(5, 1fr);
+    border-radius: 10px;
+    border-right: var(--border);
+    box-shadow: -5px 1px 10px 0px grey;
+}
+
+/* punto il div di 0 */
+.calc div:first-child {
+    font-size: 30px;
+    color: white;
+    justify-content: right;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(12, 8, 8, 0.753);
+    padding-right: 10px;
+    grid-column: 1 / 5;
+    grid-row: 1;
+}
+/* punto tutti i div figli di calc per settare le generalità comuni */
+.calc div {
+    border-bottom: var(--border);
+    border-left: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+ punto l'uguale per gestirlo
+  singolarmente in quanto ha proprietà con value differenti rispetto
+  a functions o i numeri 
+*/
+.calc div:last-child {
+    background-color: rgb(221, 53, 34);
+    grid-column: 4;
+    grid-row: 3 / 7;
+    border-bottom-right-radius: 10px;
+}
+/* 
+punto il contenitore in cui si trova lo 0 
+per gestirne l'angolo sx
+ */
+.calc div:nth-last-child(4) {
+    border-bottom-left-radius: 10px;
+}
+.function {
+    background-color: rgba(120, 151, 197, 0.466);
+}
